@@ -6,6 +6,7 @@ class App:
         self.win = win
         self.op = IntVar()
         self.lbframe_op = LabelFrame(self.win, text='Opções de conversão')
+        self.lbframe_op.grid(column=0, row=0)
         self.radio_btn_oct = Radiobutton(self.lbframe_op, text='oct -> hex', variable=self.op, value=8)
         self.radio_btn_oct.grid(column=0, row=0)
         self.radio_btn_hex = Radiobutton(self.lbframe_op, text='hex -> oct', variable=self.op, value=16)
